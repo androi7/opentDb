@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var questionDb = findViewById<Button>(R.id.questionButton)
+        var questionDb = findViewById<Button>(R.id.getQuestionButton) // questionButton)
         questionDb.setOnClickListener {
             var questionIntent = Intent(this, QuestionsListActivity::class.java)
             startActivity(questionIntent)
